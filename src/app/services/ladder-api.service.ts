@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { BarChartModal } from '../models/bar-chart.modal';
 import { LineChartModal } from '../models/line-chart.modal';
 
 @Injectable({
@@ -15,7 +16,7 @@ export class LadderApiService {
     return this.http.get<LineChartModal[]>(this.lineChartURL);
   }
 
-  getBarChartData(): Observable<LineChartModal[]> {
-    return this.http.get<LineChartModal[]>(this.lineChartURL);
+  getBarChartData(): Observable<BarChartModal[]> {
+    return this.http.get<BarChartModal[]>(this.barChartURL);
   }
 }
