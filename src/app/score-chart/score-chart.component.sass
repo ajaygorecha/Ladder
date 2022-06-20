@@ -113,3 +113,27 @@ span
 .ractangle
     position: relative
     width: fit-content
+
+.dashed
+    stroke-dasharray: 10
+
+.path
+    stroke-dasharray: 1000
+    stroke-dashoffset: 1000
+    animation: dash 5s linear alternate infinite
+
+@keyframes dash
+    from
+        stroke-dashoffset: 1000
+
+    to
+        stroke-dashoffset: 0
+
+.line1
+    position: absolute
+    width: 365px
+    height: 173px
+    left: 698px
+    top: 420px
+    border: 2px dashed #FC4E0A
+    transform: rotate(-180deg)

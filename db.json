@@ -1,4 +1,15 @@
 {
+  "scoreChart": {
+    "leftData1": "Intelligence-60",
+    "leftData2": "Energy-50",
+    "leftData3": "Curiosity-70",
+    "leftData4": "Confidence-80",
+    "rightData1": "Score-55",
+    "rightData2": "Score-30",
+    "rightData3": "Score-90",
+    "rightData4": "Score-80",
+    "rightData5": "Score-45"
+  },
   "lineChart": {
     "labels": [
       "Category 1",
