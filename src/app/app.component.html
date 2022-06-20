@@ -1,4 +1,4 @@
 <app-header></app-header>
-<score-chart></score-chart>
-<bar-chart></bar-chart>
-<line-chart></line-chart>
+<score-chart (visibleChart)="hideShowBarOrLineChart($event)"></score-chart>
+<bar-chart [hidden]="isHiddenBar"></bar-chart>
+<line-chart [hidden]="isHiddenLine"></line-chart>

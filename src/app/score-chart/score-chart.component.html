@@ -1,14 +1,21 @@
 <div class="chart-container">
   <div class="header-container">
     <label class="score-base-label"> Score based </label>
-    <select class="pull-right" name="dropdownlist" id="dropdownlistId">
-      <option class="dropdown" value="Select">Select</option>
-      <option value="value 1">Value 1</option>
-      <option value="varue 2">Value 2</option>
+    <select
+      class="pull-right"
+      name="dropdownlist"
+      id="dropdownlistId"
+      #selectChart
+      (change)="VisibleChart(selectChart.value)"
+    >
+      <option class="dropdown" value="">Select</option>
+      <option value="line">Line Chart</option>
+      <option value="bar">Bar Chart</option>
+      <option value="score">Score Chart</option>
     </select>
   </div>
   <hr />
-  <div>
+  <div [hidden]="isHiddenScore">
     <span class="style-1">{{ leftData1 }}</span>
     <span class="style-2">{{ leftData2 }}</span>
     <span class="style-3">{{ leftData3 }}</span>

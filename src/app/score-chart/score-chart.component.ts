@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ScoreChartModal } from '../models/score-chart.modal';
 import { LadderApiService } from '../services/ladder-api.service';
 
@@ -8,6 +8,9 @@ import { LadderApiService } from '../services/ladder-api.service';
   styleUrls: ['./score-chart.component.sass'],
 })
 export class ScoreChartComponent implements OnInit {
+  @Output() visibleChart: EventEmitter<string> = new EventEmitter<string>();
+
+  isHiddenScore: boolean = false;
   lineChartData: ScoreChartModal = new ScoreChartModal();
   leftData1: string = '';
   leftData2: string = '';
@@ -33,5 +36,15 @@ export class ScoreChartComponent implements OnInit {
       this.rightData4 = data.rightData4;
       this.rightData5 = data.rightData5;
     });
+  }
+
+  VisibleChart(value: string) {
+    if (value === 'score' || value === '') {
+      this.isHiddenScore = false;
+    } else {
+      this.isHiddenScore = true;
+    }
+
+    this.visibleChart.emit(value);
   }
 }
