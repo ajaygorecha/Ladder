@@ -1,8 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
 
+$primaryColor: #FC4E0A
+$greyColor: #F1F3F6
+$whiteColor: #fff
+    
 body
-    background: #F1F3F6
-    font-family: 'Inter'
+    background: $greyColor
+    font-family: 'Inter', sans-serif
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+/* BTN */
+.btn
+    display: inline-block
+    text-decoration: none
+    min-width: 170px
+    background-color: $primaryColor
+    color: $whiteColor
+    text-align: center
+    padding: 8px
+    border-radius: 8px
+    box-shadow: 0px 12px 20px rgba(252, 78, 10, 0.3)
+
+.selection
+    select
+        background-color: $greyColor
+        position: relative
+        border-radius: 8px
+        padding: 10px
+        border: 0
+        color: #8C8C8C
+        min-width: 150px
+
+/* Container */
+.container
+    max-width: 1170px
+    margin: 0 auto
+
+.card
+    background-color: $whiteColor
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1)
+    border-radius: 8px
+    margin: 15px 0
+    .card-header
+        padding: 10px 15px
+        display: flex
+        border-bottom: 1px solid $greyColor
+        justify-content: space-between
+        align-items: center
+        min-height: 40px
+        h1,h2,h3,h4,h5,h6
+            font-size: 20px
+            margin: 0
+            color: #525252
+    .card-body
+        padding: 30px 15px
 
 .chart-center-css
     width: 90%
@@ -12,6 +66,6 @@ body
     margin: 2% auto
     width: 80%
     height: 50%
-    background: #FFFFFE
+    background: $whiteColor
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1)
     border-radius: 8px

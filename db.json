@@ -34,7 +34,8 @@
         ],
         "borderWidth": 3,
         "borderColor": ["rgba(21, 166, 178, 1)"],
-        "tension": 0.6
+        "tension": 0.6,
+        "barThickness": 10
       },
       {
         "label": "Series 2",
@@ -49,7 +50,8 @@
         ],
         "borderWidth": 3,
         "borderColor": ["rgba(245, 171, 73, 1)"],
-        "tension": 0.6
+        "tension": 0.6,
+        "barThickness": 10
       },
       {
         "label": "Series 3",
@@ -64,75 +66,8 @@
         ],
         "borderWidth": 3,
         "borderColor": ["rgba(253, 79, 11, 1)"],
-        "tension": 0.6
-      }
-    ]
-  },
-  "barChart": {
-    "labels": ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    "datasets": [
-      {
-        "label": "dataset 1",
-        "data": [12, 19, 3, 5, 2, 3],
-        "backgroundColor": [
-          "red",
-          "green",
-          "blue",
-          "yellow",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)"
-        ],
-        "borderColor": [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)"
-        ],
-        "borderWidth": 1
-      },
-      {
-        "label": "dataset 2",
-        "data": [3, 12, 19, 3, 5, 2],
-        "backgroundColor": [
-          "red",
-          "red",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)"
-        ],
-        "borderColor": [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)"
-        ],
-        "borderWidth": 1
-      },
-      {
-        "label": "dataset 3",
-        "data": [1, 5, 6, 9, 8, 14],
-        "backgroundColor": [
-          "red",
-          "red",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)"
-        ],
-        "borderColor": [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)"
-        ],
-        "borderWidth": 1
+        "tension": 0.6,
+        "barThickness": 10
       }
     ]
   }

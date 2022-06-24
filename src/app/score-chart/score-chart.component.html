@@ -1,33 +1,48 @@
-<div class="chart-container">
-  <div class="header-container">
-    <label class="score-base-label"> Score based </label>
-    <select
-      class="pull-right"
-      name="dropdownlist"
-      id="dropdownlistId"
-      #selectChart
-      (change)="VisibleChart(selectChart.value)"
-    >
-      <option class="dropdown" value="">Select</option>
-      <option value="line">Line Chart</option>
-      <option value="bar">Bar Chart</option>
-      <option value="score">Score Chart</option>
-    </select>
-  </div>
-  <hr />
-  <div [hidden]="isHiddenScore">
-    <span class="style-1">{{ leftData1 }}</span>
-    <span class="style-2">{{ leftData2 }}</span>
-    <span class="style-3">{{ leftData3 }}</span>
-    <span class="style-4">{{ leftData4 }}</span>
-    <span class="style-5">{{ rightData1 }}</span>
-    <span class="style-6">{{ rightData2 }}</span>
-    <span class="style-7">{{ rightData3 }}</span>
-    <span class="style-8">{{ rightData4 }}</span>
-    <span class="style-9">{{ rightData5 }}</span>
-    <div class="ractangle">
-      <span class="style-10">{{ calculated }}</span>
+<div [hidden]="isHiddenScore" class="custom-chart">
+  <div class="d-flex">
+    <div class="left">
+      <div class="result-items">
+        <img src="../../assets/svgs/left-1.svg" alt="">
+        <span>{{ leftData1 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/left-2.svg" alt="">
+        <span>{{ leftData2 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/left-3.svg" alt="">
+        <span>{{ leftData3 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/left-4.svg" alt="">
+        <span>{{ leftData4 }}</span>
+      </div>
     </div>
-    <img src="../../assets/Image 4.jpg" alt="Image 4" />
+    <div class="right">
+      <div class="result-items">
+        <img src="../../assets/svgs/right-1.svg" alt="">
+        <span>{{ rightData1 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/right-2.svg" alt="">
+        <span>{{ rightData2 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/right-3.svg" alt="">
+        <span>{{ rightData3 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/right-4.svg" alt="">
+        <span>{{ rightData4 }}</span>
+      </div>
+      <div class="result-items">
+        <img src="../../assets/svgs/right-5.svg" alt="">
+        <span>{{ rightData4 }}</span>
+      </div>
+    </div>
   </div>
+  <div class="result">
+    <span>{{ calculated }}</span>
+    <img src="../../assets/Image 4.jpg" />
+  </div>        
 </div>

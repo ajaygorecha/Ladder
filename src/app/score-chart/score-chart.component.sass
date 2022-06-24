@@ -1,3 +1,7 @@
+$primaryColor: #FC4E0A
+$greyColor: #F1F3F6
+$whiteColor: #fff
+
 img
     display: block
     margin-left: auto
@@ -137,3 +141,109 @@ span
     top: 420px
     border: 2px dashed #FC4E0A
     transform: rotate(-180deg)
+
+
+.custom-chart
+    position: relative
+    .d-flex
+        display: flex
+        align-items: baseline
+        position: absolute
+        width: 90%
+        left: 5%
+        min-height: 500px
+        justify-content: space-between
+        pointer-events: none
+        .left,.right
+            max-width: 50%
+            flex: 0 0 50%
+            display: flex
+            flex-direction: column
+            min-height: 500px
+            justify-content: space-between
+            img
+                position: absolute
+            .result-items
+                position: relative
+        .left
+            text-align: left
+            .result-items:nth-child(1)
+                padding-left: 50px
+                img
+                    max-width: 385px
+                    top: 20px
+                    left: 100px
+            .result-items:nth-child(2)
+                img
+                    max-width: 360px
+                    top: 0
+                    left: 80px
+            .result-items:nth-child(3)
+                transform: translateY(-35px)
+                img
+                    max-width: 350px
+                    top: -50px
+                    left: 90px
+            .result-items:nth-child(4)
+                transform: translateY(-35px)
+                padding-left: 50px
+                img
+                    max-width: 385px
+                    top: -180px
+                    left: 110px
+        .right
+            text-align: right
+            .result-items:nth-child(1)
+                padding-right: 70px
+                img
+                    max-width: 380px
+                    top: 0
+                    right: 150px
+            .result-items:nth-child(2)
+                transform: translateY(20px)
+                padding-top: 50px
+                img
+                    max-width: 380px
+                    top: 50px
+                    right: 70px
+            .result-items:nth-child(3)
+                transform: translateY(35px)
+                padding-top: 50px
+                img
+                    max-width: 380px
+                    top: -15px
+                    right: 70px
+            .result-items:nth-child(4)
+                transform: translateY(-35px)
+                padding-right: 40px
+                padding-top: 68px
+                img
+                    max-width: 380px
+                    top: -40px
+                    right: 110px
+            .result-items:nth-child(5)
+                padding-right: 80px
+                span
+                    display: inline-block
+                    transform: translateY(-15px)
+                img
+                    max-width: 415px
+                    top: -215px
+                    right: 110px
+    .result
+        img
+            min-height: 580px
+            width: 600px
+            margin: 0 auto
+        span
+            position: absolute
+            top: 36%
+            left: 49%
+            transform: translate(-50%)
+            background-color: $primaryColor
+            border-radius: 24px
+            padding: 10px
+            color: $whiteColor
+            cursor: pointer
+            text-align: center
+            max-width: 100px
