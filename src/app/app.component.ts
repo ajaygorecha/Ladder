@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.hideShowBarOrLineChart('bar');
+      this.hideShowBarOrLineChart('score');
     }, 400);
   }
 
