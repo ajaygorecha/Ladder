@@ -1,22 +1,26 @@
 <app-header></app-header>
 
 <div class="container">
-    <div class="card">
-        <div class="card-header">
-            <h1>Chart Title</h1>
-            <div class="selection">
-                <select name="" id="">
-                    <option value="" selected disabled>Selection</option>
-                    <option value="">Score Chart</option>
-                    <option value="">Line Chart</option>
-                    <option value="">Bar Chart</option>
-                </select>
-            </div>
-        </div>
-        <div class="card-body">
-            <score-chart (visibleChart)="hideShowBarOrLineChart($event)"></score-chart>
-            <bar-chart [hidden]="isHiddenBar"></bar-chart>
-            <line-chart [hidden]="isHiddenLine"></line-chart>
-        </div>
+  <div class="card">
+    <div class="card-header">
+      <h1>{{ title }}</h1>
+      <div class="selection">
+        <select
+          name="dropdownlist"
+          id="dropdownlistId"
+          #selectChart
+          (change)="hideShowBarOrLineChart(selectChart.value)"
+        >
+          <option value="score">Score Chart</option>
+          <option value="line">Line Chart</option>
+          <option value="bar">Bar Chart</option>
+        </select>
+      </div>
     </div>
+    <div class="card-body">
+      <score-chart [hidden]="isHiddenScore"></score-chart>
+      <bar-chart [hidden]="isHiddenBar"></bar-chart>
+      <line-chart [hidden]="isHiddenLine"></line-chart>
+    </div>
+  </div>
 </div>

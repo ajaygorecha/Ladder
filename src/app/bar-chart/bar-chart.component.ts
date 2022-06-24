@@ -14,7 +14,7 @@ export class BarChartComponent implements OnInit {
   constructor(private ladderApiService: LadderApiService) {}
 
   ngOnInit(): void {
-    this.ladderApiService.getLineChartData().subscribe((data: any) => {
+    this.ladderApiService.getBarChartData().subscribe((data: any) => {
       let barChartModalObj: BarChartModal;
       barChartModalObj = data;
       this.lineChartData.labels = barChartModalObj.labels;
@@ -31,6 +31,7 @@ export class BarChartComponent implements OnInit {
         datasets: this.lineChartData.datasets,
       },
       options: {
+        
         plugins: {
           legend: {
             position: 'bottom',
