@@ -19,17 +19,17 @@ export class AppComponent implements OnInit {
 
   hideShowBarOrLineChart(value: string) {
     if (value === 'score') {
-      this.title = 'score chart';
+      this.title = 'Score Chart';
       this.isHiddenBar = true;
       this.isHiddenLine = true;
       this.isHiddenScore = false;
     } else if (value === 'line') {
-      this.title = 'line chart';
+      this.title = 'Line Chart';
       this.isHiddenBar = true;
       this.isHiddenLine = false;
       this.isHiddenScore = true;
     } else if (value === 'bar') {
-      this.title = 'bar chart';
+      this.title = 'Bar Chart';
       this.isHiddenBar = false;
       this.isHiddenLine = true;
       this.isHiddenScore = true;

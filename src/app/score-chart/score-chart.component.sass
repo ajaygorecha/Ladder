@@ -2,147 +2,6 @@ $primaryColor: #FC4E0A
 $greyColor: #F1F3F6
 $whiteColor: #fff
 
-img
-    display: block
-    margin-left: auto
-    margin-right: auto
-    width: 579px
-
-.pull-right
-    float: right
-
-select
-    background: #F1F3F6
-
-.geeks
-    width: 400px
-    height: 2px
-    background: #fff
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-
-.geeks::before
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: green
-    animation: animate 5s linear infinite
-
-@keyframes animate
-    0%
-        left: 0
-
-    50%
-        left: 100%
-
-    0%
-        left: 0
-
-.score-base-label
-    font-family: 'Inter'
-    font-style: normal
-    font-weight: 700
-    font-size: 20px
-    color: #525252
-
-hr
-    width: 100%
-    border: 1px solid #F1F3F6
-
-.header-container
-    padding: 20px 20px 0 20px
-    padding-bottom: 0px
-
-.style-1
-    left: 200px
-    top: 400px
-
-.style-2
-    left: 112px
-    top: 300px
-
-.style-3
-    left: 50px
-    top: 200px
-
-.style-4
-    left: 10px
-    top: 100px
-
-.style-5
-    left: 750px
-    top: 100px
-
-.style-6
-    left: 750px
-    top: 200px
-
-.style-7
-    left: 700px
-    top: 300px
-
-.style-8
-    left: 630px
-    top: 400px
-
-.style-9
-    left: 550px
-    top: 500px
-
-.style-10
-    position: absolute
-    color: #FFFFFF
-    padding: 10px
-    width: 100px
-    // transform: translate(-50%, -50%)
-    background: #FC4E0A
-    border-radius: 50px
-    top: 250px
-    left: 700px
-
-span
-    position: relative
-    font-family: 'Inter'
-    font-style: normal
-    font-weight: 700
-    font-size: 14px
-    line-height: 17px
-    color: #FC4E0A
-
-.ractangle
-    position: relative
-    width: fit-content
-
-.dashed
-    stroke-dasharray: 10
-
-.path
-    stroke-dasharray: 1000
-    stroke-dashoffset: 1000
-    animation: dash 5s linear alternate infinite
-
-@keyframes dash
-    from
-        stroke-dashoffset: 1000
-
-    to
-        stroke-dashoffset: 0
-
-.line1
-    position: absolute
-    width: 365px
-    height: 173px
-    left: 698px
-    top: 420px
-    border: 2px dashed #FC4E0A
-    transform: rotate(-180deg)
-
-
 .custom-chart
     position: relative
     .d-flex
@@ -161,6 +20,10 @@ span
             flex-direction: column
             min-height: 500px
             justify-content: space-between
+            span
+                color: $primaryColor
+                font-size: 14px
+                font-weight: bold
             img
                 position: absolute
             .result-items
@@ -195,10 +58,11 @@ span
             text-align: right
             .result-items:nth-child(1)
                 padding-right: 70px
+                transform: translateY(20px)
                 img
                     max-width: 380px
-                    top: 0
-                    right: 150px
+                    top: 5px
+                    right: 140px
             .result-items:nth-child(2)
                 transform: translateY(20px)
                 padding-top: 50px
@@ -225,25 +89,29 @@ span
                 padding-right: 80px
                 span
                     display: inline-block
-                    transform: translateY(-15px)
+                    transform: translateY(-35px)
                 img
                     max-width: 415px
-                    top: -215px
+                    top: -220px
                     right: 110px
     .result
         img
             min-height: 580px
             width: 600px
             margin: 0 auto
+            display: block
+            margin-left: auto
+            margin-right: auto
         span
             position: absolute
             top: 36%
-            left: 49%
+            left: 50%
             transform: translate(-50%)
             background-color: $primaryColor
             border-radius: 24px
-            padding: 10px
+            padding: 10px 30px
             color: $whiteColor
             cursor: pointer
             text-align: center
-            max-width: 100px
+            max-width: 150px
+            display: inline-block
